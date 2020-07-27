@@ -1,0 +1,15 @@
+<h1>habilidades</h1>
+
+<form method="GET"> {% csrf_token %}
+  <input type="number" id="kid" name="kid" placeholder="Ingrese id aqui">
+  <button type="submit">Buscar</button>
+</form>
+
+<h3>Lista habulidades</h3>
+
+
+<ul>
+    {%for e in habilidades%}
+      <li>{{e}}</li>
+    {%endfor%}
+</ul>

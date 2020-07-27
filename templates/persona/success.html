@@ -1,0 +1,24 @@
+{% extends 'base.html' %} 
+
+{%load static%}
+
+{% block title %} Pagina de inicio de empleados {% endblock title %}
+
+
+{% block content %} 
+
+{% include 'includes/header.html' %}
+
+<div class="grid-container">
+    <div class="grid-x">
+        <h1 class="cell">Borrar Empleado</h1>
+        <div class="cell">
+            <div data-alert class="alert-box success radius">
+                Operacion Exitosa.
+                <a href="#" class="close">&times;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
